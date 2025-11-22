@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /public/assets/
+Allow: /public/assets/img/enesehsdev.webp
+Allow: /public/assets/img/meta.webp
+
+Sitemap: https://enesehs.dev/sitemap.xml
