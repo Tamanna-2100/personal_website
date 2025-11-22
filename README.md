@@ -11,7 +11,7 @@
 
 This repository contains the source code for my personal portfolio website. The site showcases my projects, technical skills, and professional experience.
 
-![Website Preview](https://raw.githubusercontent.com/enesehs/enesehs.github.io/main/public/assets/img/meta.webp)
+<!-- Website preview image removed -->
 
 ## ✨ Features
 
