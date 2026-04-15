@@ -127,6 +127,7 @@ Designed & Developed by Tamanna Gaur
         <link rel="stylesheet" href="src/css/responsive.min.css">
         <link rel="stylesheet" href="src/css/gradient-bg.min.css">
     </noscript>
+    <link rel="stylesheet" href="src/css/kinetic-luxury.css">
     <link rel="icon" type="image/x-icon" href="public/favicon.ico">
 </head>
 
@@ -143,274 +144,230 @@ Designed & Developed by Tamanna Gaur
                 <span></span>
             </div>
             <ul class="nav-section">
-                <li><a href="#" data-i18n="nav_home">Home</a></li>
-                <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
-                <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
-                <li><a href="#certificates" data-i18n="nav_certificates">Certificates</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Work</a></li>
                 <li><a href="#about" data-i18n="nav_about">About</a></li>
                 <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
-                
-                <li> <label class="switch">
+                <li>
+                    <label class="switch">
                         <input type="checkbox" id="toggleButton" checked>
                         <span class="slider"></span>
-                    </label></li>
+                    </label>
+                </li>
             </ul>
         </nav>
     </header>
 
     <div class="hero-wrapper">
-        <section class="hero" id="home">
-            <div class="hero-container">
-                <div class="left-content">
-                    <div class="title-container">
-                        <h3 class="greeting" data-i18n="greeting">I'm</h3>
-                        <h1 id="Spinning-Text">Tamanna</h1>
-                    </div>
+        <section class="hero hero-kinetic" id="home">
+            <p class="hero-eyebrow">Computer Science Student • Product Builder</p>
+            <h1 id="Spinning-Text">Tamanna Gaur</h1>
+            <p class="hero-subcopy" data-i18n="about_me">I blend product thinking, AI experimentation, and front-end craft to create digital experiences that feel clear, useful, and alive.</p>
+            <div class="cta-buttons hero-cta">
+                <a href="#projects" class="cta-btn magnetic-btn primary-btn" data-i18n="see_projects">View Work</a>
+                <a href="#contact" class="cta-btn magnetic-btn secondary-btn">Contact Me</a>
+            </div>
 
-                    <div class="about-me">
-                        <p data-i18n="about_me">"I'm studying Computer Science at Wayne State University, with a strong interest in data, design, and development.
-            I'm passionate about building creative solutions, working in diverse teams, and learning new technologies."
-                            development. If you'd like to collaborate with me on this journey, feel free to <a
-                                href="#contact" class="text-link">get in touch</a>."</p>
-                    </div>
-
-                    <div class="cta-buttons">
-                        <a href="#about" class="cta-btn primary-btn" data-i18n="learn_more">Learn More</a>
-                        <a href="#projects" class="cta-btn secondary-btn" data-i18n="see_projects">See My Projects</a>
-                    </div>
-                </div>
-
-                <div class="right-content">
-                    <div class="profile-container">
-                        <div class="profile-frame">
-                    <img id="profile-pic" 
-                   src="profile_pic.jpg" 
-                       alt="Tamanna" 
-                                 draggable="false"
-                                 data-nosnippet 
-                                 fetchpriority="high"
-                                 loading="eager"
-                                 decoding="sync"
-                                 width="400" 
-                                 height="400">
-                        </div>
-
-                        <div class="social-media">
-                            <ul class="social-icons">
-                                <li>
-                                    <a href="https://www.linkedin.com/in/tamanna-gaur-11bab4302/" aria-label="LinkedIn" target="_blank" rel="noopener">
-                                        <img src="public/assets/links/linkedin.webp" alt="LinkedIn" id="linkedin" draggable="false" loading="lazy" decoding="async">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/Tamanna-2100" aria-label="GitHub" target="_blank" rel="noopener">
-                                        <img src="public/assets/links/github.webp" alt="GitHub" id="github" draggable="false" loading="lazy" decoding="async">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="hero-services">
+                <article class="service-card reveal">
+                    <h3>UI/UX Design</h3>
+                    <p>Human-centered interfaces with strong hierarchy and a premium visual tone.</p>
+                </article>
+                <article class="service-card reveal">
+                    <h3>Web Development</h3>
+                    <p>Responsive, accessible, and performance-focused websites built for real users.</p>
+                </article>
+                <article class="service-card reveal">
+                    <h3>AI Prototyping</h3>
+                    <p>Practical AI-powered concepts for recommendation, analysis, and automation.</p>
+                </article>
+                <article class="service-card reveal">
+                    <h3>Data Storytelling</h3>
+                    <p>Turning complex datasets into clear narratives and actionable insights.</p>
+                </article>
             </div>
         </section>
     </div>
+
+    <section class="skill-ticker" aria-label="Technology highlights">
+        <div class="ticker-track">
+            <span>React</span><span>UI/UX</span><span>AI Development</span><span>Machine Learning</span><span>Python</span><span>SQL</span><span>Flask</span><span>JavaScript</span>
+            <span>React</span><span>UI/UX</span><span>AI Development</span><span>Machine Learning</span><span>Python</span><span>SQL</span><span>Flask</span><span>JavaScript</span>
+        </div>
+    </section>
     <section id="projects" class="projects-section">
         <div class="section-header">
             <h2 data-i18n="projects_header">My Projects</h2>
             <p data-i18n="projects_subheader">Here are some of my web development projects</p>
         </div>
 
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="public/assets/projects/perfect_closet_thumbnail.png" alt="Perfect Closet" draggable="false" data-nosnippet>
-                <div class="project-info-overlay">
-                    <h3>Perfect Closet</h3>
-                    <div class="tag-container">
-                        <span>Flask</span>
-                        <span>PyTorch</span>
-                        <span>Pillow</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Tamanna-2100/perfect-closet" target="_blank" rel="noopener" class="project-btn">Repository</a>
+        <div class="projects-carousel">
+            <div class="carousel-container">
+                <div class="carousel-item active">
+                    <img src="public/assets/projects/perfect_closet_thumbnail.png" alt="Perfect Closet">
+                    <div class="carousel-item-content">
+                        <div>
+                            <h3>Perfect Closet</h3>
+                            <div class="carousel-item-tags">
+                                <span class="tag">Flask</span>
+                                <span class="tag">PyTorch</span>
+                                <span class="tag">Pillow</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/Tamanna-2100/perfect-closet" target="_blank" rel="noopener" class="cta-btn primary-btn">View →</a>
                     </div>
                 </div>
-                <div class="project-description">
-                    <button class="close-description"><span>&times;</span></button>
-                    <p>A web app for outfit recommendations and body-type classification using transfer learning.</p>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <img src="public/assets/projects/todolist_thumbnail.png" alt="TodoList App" draggable="false" data-nosnippet>
-                <div class="project-info-overlay">
-                    <h3>TodoList App</h3>
-                    <div class="tag-container">
-                        <span>Flask</span>
-                        <span>SQLite</span>
-                        <span>SQLAlchemy</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://todolist-nine-rho-96.vercel.app/login?next=%2F" target="_blank" rel="noopener" class="project-btn">Live Demo</a>
-                        <a href="https://github.com/Tamanna-2100/todolist" target="_blank" rel="noopener" class="project-btn">Repository</a>
+                <div class="carousel-item left">
+                    <img src="public/assets/projects/todolist_thumbnail.png" alt="TodoList App">
+                    <div class="carousel-item-content">
+                        <div>
+                            <h3>TodoList App</h3>
+                            <div class="carousel-item-tags">
+                                <span class="tag">Flask</span>
+                                <span class="tag">SQLite</span>
+                                <span class="tag">SQLAlchemy</span>
+                            </div>
+                        </div>
+                        <a href="https://todolist-nine-rho-96.vercel.app/login?next=%2F" target="_blank" rel="noopener" class="cta-btn primary-btn">View →</a>
                     </div>
                 </div>
-                <div class="project-description">
-                    <button class="close-description"><span>&times;</span></button>
-                    <p>A lightweight Flask-based todo list app with persistent storage and user auth.</p>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <img src="public/assets/projects/interview_coach_thumbnail.png" alt="Interview Coach" draggable="false" data-nosnippet>
-                <div class="project-info-overlay">
-                    <h3>Interview Coach</h3>
-                    <div class="tag-container">
-                        <span>Python</span>
-                        <span>sentence-transformers</span>
-                        <span>Flask</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Tamanna-2100/Interview_coach" target="_blank" rel="noopener" class="project-btn">Repository</a>
+                <div class="carousel-item right">
+                    <img src="public/assets/projects/interview_coach_thumbnail.png" alt="Interview Coach">
+                    <div class="carousel-item-content">
+                        <div>
+                            <h3>Interview Coach</h3>
+                            <div class="carousel-item-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">NLP</span>
+                                <span class="tag">Flask</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/Tamanna-2100/Interview_coach" target="_blank" rel="noopener" class="cta-btn primary-btn">View →</a>
                     </div>
                 </div>
-                <div class="project-description">
-                    <button class="close-description"><span>&times;</span></button>
-                    <p>An AI prototype to practice interviews using speech and semantic similarity models.</p>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <img src="public/assets/projects/mitten_launch_thumbnail.png" alt="Mitten Launch" draggable="false" data-nosnippet>
-                <div class="project-info-overlay">
-                    <h3>Mitten Launch</h3>
-                    <div class="tag-container">
-                        <span>Web</span>
-                        <span>Platform</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/aaguirr3/michigan-small-business-platform" target="_blank" rel="noopener" class="project-btn">Repository</a>
+                <div class="carousel-item">
+                    <img src="public/assets/projects/mitten_launch_thumbnail.png" alt="Mitten Launch">
+                    <div class="carousel-item-content">
+                        <div>
+                            <h3>Mitten Launch</h3>
+                            <div class="carousel-item-tags">
+                                <span class="tag">Web</span>
+                                <span class="tag">Platform</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/aaguirr3/michigan-small-business-platform" target="_blank" rel="noopener" class="cta-btn primary-btn">View →</a>
                     </div>
                 </div>
-                <div class="project-description">
-                    <button class="close-description"><span>&times;</span></button>
-                    <p>A small-business platform for Michigan — repository by aaguirr3 (Mitten Launch).</p>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <img src="public/assets/projects/Gifty.png" alt="Gifty" draggable="false" data-nosnippet>
-                <div class="project-info-overlay">
-                    <h3>Gifty</h3>
-                    <div class="tag-container">
-                        <span>React</span>
-                        <span>Next.js</span>
-                        <span>AI</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://gifty-mg3f2p1s6-tamanna-gaurs-projects.vercel.app/" target="_blank" rel="noopener" class="project-btn">Live Demo</a>
-                        <a href="https://github.com/Tamanna-2100/Gifty/tree/main" target="_blank" rel="noopener" class="project-btn">Repository</a>
+                <div class="carousel-item">
+                    <img src="public/assets/projects/Gifty.png" alt="Gifty">
+                    <div class="carousel-item-content">
+                        <div>
+                            <h3>Gifty</h3>
+                            <div class="carousel-item-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Next.js</span>
+                                <span class="tag">AI</span>
+                            </div>
+                        </div>
+                        <a href="https://gifty-mg3f2p1s6-tamanna-gaurs-projects.vercel.app/" target="_blank" rel="noopener" class="cta-btn primary-btn">View →</a>
                     </div>
                 </div>
-                <div class="project-description">
-                    <button class="close-description"><span>&times;</span></button>
-                    <p>An AI-powered gift recommendation platform that helps you find the perfect gift for any occasion.</p>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <img src="public/assets/projects/live games.png" alt="Live Games" draggable="false" data-nosnippet>
-                <div class="project-info-overlay">
-                    <h3>Live Games</h3>
-                    <div class="tag-container">
-                        <span>JavaScript</span>
-                        <span>HTML5</span>
-                        <span>CSS3</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://live-games.vercel.app/" target="_blank" rel="noopener" class="project-btn">Live Demo</a>
-                        <a href="https://github.com/Tamanna-2100/live_games" target="_blank" rel="noopener" class="project-btn">Repository</a>
+                <div class="carousel-item">
+                    <img src="public/assets/projects/live games.png" alt="Live Games">
+                    <div class="carousel-item-content">
+                        <div>
+                            <h3>Live Games</h3>
+                            <div class="carousel-item-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                            </div>
+                        </div>
+                        <a href="https://live-games.vercel.app/" target="_blank" rel="noopener" class="cta-btn primary-btn">View →</a>
                     </div>
                 </div>
-                <div class="project-description">
-                    <button class="close-description"><span>&times;</span></button>
-                    <p>A collection of interactive browser-based games built with vanilla JavaScript.</p>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <img src="public/assets/projects/Sentiment Momentum Trader.png" alt="News Sentiment Dashboard" draggable="false" data-nosnippet>
-                <div class="project-info-overlay">
-                    <h3>News Sentiment Dashboard</h3>
-                    <div class="tag-container">
-                        <span>Python</span>
-                        <span>NLP</span>
-                        <span>Streamlit</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://news-sentiment-dashboard-seven.vercel.app/" target="_blank" rel="noopener" class="project-btn">Live Demo</a>
-                        <a href="https://github.com/Tamanna-2100/news-sentiment-dashboard" target="_blank" rel="noopener" class="project-btn">Repository</a>
+                <div class="carousel-item">
+                    <img src="public/assets/projects/Sentiment Momentum Trader.png" alt="News Sentiment Dashboard">
+                    <div class="carousel-item-content">
+                        <div>
+                            <h3>News Sentiment</h3>
+                            <div class="carousel-item-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">NLP</span>
+                                <span class="tag">Streamlit</span>
+                            </div>
+                        </div>
+                        <a href="https://news-sentiment-dashboard-seven.vercel.app/" target="_blank" rel="noopener" class="cta-btn primary-btn">View →</a>
                     </div>
                 </div>
-                <div class="project-description">
-                    <button class="close-description"><span>&times;</span></button>
-                    <p>Real-time news sentiment analysis dashboard using NLP to track media sentiment trends.</p>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <img src="public/assets/projects/Crypto Anomaly Detector.png" alt="Crypto Anomaly Detector" draggable="false" data-nosnippet>
-                <div class="project-info-overlay">
-                    <h3>Crypto Anomaly Detector</h3>
-                    <div class="tag-container">
-                        <span>Python</span>
-                        <span>Machine Learning</span>
-                        <span>Data Analysis</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://crypto-anomaly-detector.vercel.app/" target="_blank" rel="noopener" class="project-btn">Live Demo</a>
-                        <a href="https://github.com/Tamanna-2100/crypto-anomaly-detector" target="_blank" rel="noopener" class="project-btn">Repository</a>
+                <div class="carousel-item">
+                    <img src="public/assets/projects/Crypto Anomaly Detector.png" alt="Crypto Anomaly Detector">
+                    <div class="carousel-item-content">
+                        <div>
+                            <h3>Crypto Anomaly</h3>
+                            <div class="carousel-item-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">ML</span>
+                                <span class="tag">Data</span>
+                            </div>
+                        </div>
+                        <a href="https://crypto-anomaly-detector.vercel.app/" target="_blank" rel="noopener" class="cta-btn primary-btn">View →</a>
                     </div>
                 </div>
-                <div class="project-description">
-                    <button class="close-description"><span>&times;</span></button>
-                    <p>Machine learning model to detect anomalies in cryptocurrency price movements and trading patterns.</p>
-                </div>
-            </div>
 
-            <div class="project-card">
-                <img src="public/assets/projects/interview_coach_thumbnail.png" alt="RAG Pipeline Optimizer" draggable="false" data-nosnippet>
-                <div class="project-info-overlay">
-                    <h3>RAG Pipeline Optimizer</h3>
-                    <div class="tag-container">
-                        <span>Python</span>
-                        <span>LLM</span>
-                        <span>RAG</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/Tamanna-2100/rag_pipeline_optimizer" target="_blank" rel="noopener" class="project-btn">Repository</a>
+                <div class="carousel-item">
+                    <img src="public/assets/projects/interview_coach_thumbnail.png" alt="RAG Pipeline Optimizer">
+                    <div class="carousel-item-content">
+                        <div>
+                            <h3>RAG Optimizer</h3>
+                            <div class="carousel-item-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">LLM</span>
+                                <span class="tag">RAG</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/Tamanna-2100/rag_pipeline_optimizer" target="_blank" rel="noopener" class="cta-btn primary-btn">View →</a>
                     </div>
                 </div>
-                <div class="project-description">
-                    <button class="close-description"><span>&times;</span></button>
-                    <p>An optimization framework for Retrieval-Augmented Generation (RAG) pipelines to improve LLM performance.</p>
+
+                <div class="carousel-item">
+                    <img src="public/assets/projects/healthcard_thumbnail.png" alt="HealthCard">
+                    <div class="carousel-item-content">
+                        <div>
+                            <h3>HealthCard</h3>
+                            <div class="carousel-item-tags">
+                                <span class="tag">Flask</span>
+                                <span class="tag">React</span>
+                                <span class="tag">AI</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/Tamanna-2100/healthcard" target="_blank" rel="noopener" class="cta-btn primary-btn">View →</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="pagination">
-            <!-- Pagination buttons will be generated by JavaScript -->
+        <div class="carousel-nav">
+            <button class="carousel-btn">←</button>
+            <button class="carousel-btn">→</button>
         </div>
 
         <div class="view-more">
-            <a href="https://github.com/Tamanna-2100?tab=repositories" class="cta-btn" data-i18n="view_all_projects">View All Projects</a>
+            <a href="https://github.com/Tamanna-2100?tab=repositories" class="cta-btn primary-btn" data-i18n="view_all_projects">View All Projects</a>
         </div>
     </section>
 
 
     <section id="skills" class="skills-section">
-        <div class="section-header">
-            <h2 data-i18n="skills_header">My Skills</h2>
-            <p data-i18n="skills_subheader">Technologies and languages I work with</p>
+        <div class="section-header reveal">
+            <h2 data-i18n="skills_header">Skills & Capabilities</h2>
+            <p data-i18n="skills_subheader">Technologies and methods I rely on to ship high-impact work</p>
         </div>
 
         <div class="skills-container">
@@ -521,48 +478,27 @@ Designed & Developed by Tamanna Gaur
         </div>
 
         <div class="about-container">
-            <div class="about-content-wrapper">
-                <div class="about-text">
-                    <p><strong>Hi — I'm Tamanna Gaur.</strong> I'm studying Computer Science at Wayne State University, with interests in data, web development, and UX design. I enjoy building practical tools and visualizations that help people make decisions and work more efficiently.</p>
+            <div class="about-image">
+                <img src="profile_pic.jpg" loading="lazy" alt="Tamanna">
+            </div>
+            <div class="about-content">
+                <p><strong>Hi — I'm Tamanna Gaur.</strong> I'm studying Computer Science at Wayne State University, with interests in data, web development, and UX design. I enjoy building practical tools and visualizations that help people make decisions and work more efficiently.</p>
 
-                    <div class="about-details">
-                        <div class="detail-item">
-                            <h4>Current Roles</h4>
-                            <p>VP & Finance Director — Blueprints for Pangaea<br>Student Assistant — Wayne State Career Services</p>
-                        </div>
-                        <div class="detail-item">
-                            <h4>Core Skills</h4>
-                            <p>Python · SQL · HTML & CSS · Java · Tableau · Excel · PowerPoint · Canva</p>
-                        </div>
-                    </div>
+                <p>Currently, I'm the Chapter President of Blueprints for Pangaea and a Student Assistant at Wayne State Career Services. Through my various leadership roles and technical projects, I've learned the importance of clear communication, iterative problem-solving, and user-centered design.</p>
 
-                    <div class="about-cta">
-                        <a href="#contact" class="cta-btn">Contact Me</a>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="about-image-container">
-                        <!-- Using provided profile_pic image from repo root -->
-                        <img src="profile_pic.jpg" loading="lazy" class="about-img" alt="Tamanna">
-                    </div>
-                </div>
-                <div class="about-extra" style="margin-top:24px;">
-                    <h3>Experience</h3>
-                    <ul>
-                        <li><strong>VP & Finance Director</strong> — Blueprints for Pangaea | Apr 2023 – Present<br>Organized events, led grant applications, and managed social media.</li>
-                        <li><strong>Student Assistant</strong> — Wayne State Career Services | June 2025 – Present<br>Provided front-line student support, managed communications, and handled social media content for student outreach.</li>
-                        <li><strong>Social Coordinator</strong> — Society of Women Engineers | May 2024 – Present<br>Planned and hosted events, coordinated communications.</li>
-                        <li><strong>Blood Donor Ambassador</strong> — American Red Cross | Mar 2020 – May 2022<br>Assisted donors and supported recovery during blood drives.</li>
-                    </ul>
+                <h3 style="margin-top: 32px; margin-bottom: 16px;">Experience</h3>
+                <p><strong>Chapter President</strong> — Blueprints for Pangaea (Apr 2023 – Present)</p>
+                <p>Organized events, led grant applications, and managed social media.</p>
 
-                    <!-- Projects list removed per request -->
+                <p><strong>Student Assistant</strong> — Wayne State Career Services (June 2025 – Present)</p>
+                <p>Provided front-line student support, managed communications, and handled social media content for student outreach.</p>
 
-                    <h3>Recognition</h3>
-                    <ul>
-                        <li>Dean's List: Winter 2023, Fall 2023, Fall 2024, Winter 2025</li>
-                        <li>2nd Place – Global SPHEEHA Drawing & Painting Competition, 2020</li>
-                    </ul>
-                </div>
+                <p><strong>Social Coordinator</strong> — Society of Women Engineers (May 2024 – Present)</p>
+                <p>Planned and hosted events, coordinated communications.</p>
+
+                <h3 style="margin-top: 32px; margin-bottom: 16px;">Recognition</h3>
+                <p>Dean's List: Winter 2023, Fall 2023, Fall 2024, Winter 2025</p>
+                <p>2nd Place – Global SPHEEHA Drawing & Painting Competition, 2020</p>
             </div>
         </div>
     </section>
@@ -575,50 +511,20 @@ Designed & Developed by Tamanna Gaur
 
         <div class="contact-container">
             <div class="contact-info">
-                <div class="info-item">
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                            </path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                    </div>
-                    <div class="info-content">
-                        <h4 data-i18n="email">Email</h4>
-                        <p><a href="mailto:gaurtamanna20@gmail.com">gaurtamanna20@gmail.com</a></p>
-                    </div>
+                <div class="contact-item">
+                    <h3 data-i18n="email">Email</h3>
+                    <a href="mailto:gaurtamanna20@gmail.com">gaurtamanna20@gmail.com</a>
                 </div>
-                <div class="info-item">
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                            <circle cx="12" cy="10" r="3"></circle>
-                        </svg>
-                    </div>
-                    <div class="info-content">
-                        <h4 data-i18n="location">Location</h4>
-                        <p data-i18n="location_value">Detroit, Michigan</p>
-                    </div>
+                <div class="contact-item">
+                    <h3 data-i18n="location">Location</h3>
+                    <p data-i18n="location_value">Detroit, Michigan</p>
                 </div>
-                <div class="info-item">
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="info-content">
-                        <h4 data-i18n="social">Social</h4>
-                        <div class="mini-social">
-                            <a href="#" target="_blank" rel="noopener">Instagram</a>
-                            <a href="https://www.linkedin.com/in/tamanna-gaur-11bab4302/" target="_blank" rel="noopener">LinkedIn</a>
-                            <a href="https://github.com/Tamanna-2100" target="_blank" rel="noopener">GitHub</a>
-                        </div>
-                    </div>
+                <div class="contact-item">
+                    <h3 data-i18n="social">Social</h3>
+                    <p>
+                        <a href="https://www.linkedin.com/in/tamanna-gaur-11bab4302/" target="_blank" rel="noopener">LinkedIn</a> · 
+                        <a href="https://github.com/Tamanna-2100" target="_blank" rel="noopener">GitHub</a>
+                    </p>
                 </div>
             </div>
             <div class="contact-form">
@@ -643,48 +549,35 @@ Designed & Developed by Tamanna Gaur
         </div>
     </section>
     <footer>
-        <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-        </div>
+        <h2 class="footer-heading">LET'S BUILD SOMETHING GREAT</h2>
         <ul class="social-icon-footer">
             <li>
-                <a href="https://www.linkedin.com/in/tamanna-gaur-11bab4302/" target="_blank" rel="noopener">
+                <a href="https://www.linkedin.com/in/tamanna-gaur-11bab4302/" target="_blank" rel="noopener" aria-label="LinkedIn">
                     <img src="public/assets/links/linkedin.webp" alt="LinkedIn" id="linkedin" draggable="false" loading="lazy">
                 </a>
             </li>
             <li>
-                <a href="https://github.com/Tamanna-2100" target="_blank" rel="noopener">
+                <a href="https://github.com/Tamanna-2100" target="_blank" rel="noopener" aria-label="GitHub">
                     <img src="public/assets/links/github.webp" alt="GitHub" id="github" draggable="false" loading="lazy">
                 </a>
             </li>
         </ul>
-        <ul class="footer-menu">
-            <li><a href="#" data-i18n="nav_home">Home</a></li>
-            <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
-            <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
-            <li><a href="#certificates" data-i18n="nav_certificates">Certificates</a></li>
-            <li><a href="#about" data-i18n="nav_about">About</a></li>
-            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
-        </ul>
-        
-        <!-- Language Selector -->
+        <p class="footer-contact-link"><a href="mailto:gaurtamanna20@gmail.com">gaurtamanna20@gmail.com</a></p>
+
         <div class="language-selector">
             <label for="language-select" data-i18n="language_label">Language:</label>
             <select id="language-select">
                 <option value="en">English</option>
-                <option value="tr">Türkçe</option>
-                <option value="es">Español</option>
+                <option value="tr">Turkce</option>
+                <option value="es">Espanol</option>
                 <option value="zh">中文</option>
                 <option value="hi">हिन्दी</option>
-                <option value="fr">Français</option>
+                <option value="fr">Francais</option>
                 <option value="ja">日本語</option>
             </select>
         </div>
-        
-    <p data-i18n="footer_copyright">&copy; 2025 Tamanna Gaur | All Rights Reserved</p>
+
+        <p data-i18n="footer_copyright">&copy; 2025 Tamanna Gaur | All Rights Reserved</p>
     </footer>
     <div class="gradient-bg">
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="noiseBg">
@@ -722,6 +615,7 @@ Designed & Developed by Tamanna Gaur
     <script src="src/js/clickspark.js" defer></script>
     <script src="https://unpkg.com/scrollreveal" defer></script>
     <script src="src/js/language-detector.js" defer></script>
+    <script src="src/js/kinetic-luxury.js" defer></script>
         
         <!-- Dark Reader compatibility script -->
         <script>
