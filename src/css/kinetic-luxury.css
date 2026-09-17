@@ -824,3 +824,99 @@ button:focus-visible {
         height: 320px;
     }
 }
+
+/* ===== HERO SLEEK 4 BOXES ===== */
+.hero-academic-sub {
+    font-size: 0.95rem;
+    color: var(--luxury-text-secondary);
+    opacity: 0.7;
+    margin-top: -24px;
+    margin-bottom: 40px;
+    letter-spacing: 0.05em;
+    animation: fadeUpStagger 0.8s ease 0.35s forwards;
+}
+
+.hero-social-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin: 40px auto 0;
+    max-width: 800px;
+    opacity: 0;
+    animation: fadeUpStagger 0.8s ease 0.4s forwards;
+}
+
+.social-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
+}
+
+.resume-box {
+    background-color: #ffffff;
+    color: #0c0f16;
+    border: 1px solid #ffffff;
+}
+
+.resume-box:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+.dark-box {
+    background-color: rgba(255, 255, 255, 0.02);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark-box:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.box-icon {
+    flex-shrink: 0;
+}
+
+.project-label {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 6px;
+}
+
+.project-label.personal {
+    color: #0066ff; /* Luxury Blue */
+}
+
+.project-label.research {
+    color: #32a0dc; /* Luxury Cyan */
+}
+
+.project-label.class-research {
+    color: #ff9500; /* Luxury Orange */
+}
+
+.project-label.group {
+    color: #6b4aff; /* Luxury Purple */
+}
+
+.project-label.hackathon {
+    color: #ff2d55; /* Luxury Rose */
+}
+
+
